@@ -29,7 +29,7 @@ provide useful information when iterating through the records in a dataset:
    :widths: 10, 10, 80
    
    :doc:`bof </refs/client/item/m_bof>`, :doc:`bof </refs/server/item/m_bof>`,  "If the method returns true, the cursor is at the first row in the dataset, otherwise, the cursor is not known to be at the first row in the dataset."
-   :doc:`eof </refs/client/item/m_eof>`, :doc:`bof </refs/server/item/m_eof>`,  "If the method returns true, the cursor is at the last row in the dataset, otherwise, the cursor is not known to be at the last row in the dataset."
+   :doc:`eof </refs/client/item/m_eof>`, :doc:`eof </refs/server/item/m_eof>`,  "If the method returns true, the cursor is at the last row in the dataset, otherwise, the cursor is not known to be at the last row in the dataset."
 
 Each time the cursor move to another record in the dataset the following events
 are triggered:
