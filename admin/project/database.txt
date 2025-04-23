@@ -77,7 +77,9 @@ Examples of database setups
 
 Using MySQL on Windows is supported, please visit `MySQL deployment on Windows`_.
 
-Even though Jam.py supports all databases from the above, there is no guarantee that some specific and/or propriety database functionality is supported. Here we name a few.
+Even though Jam.py supports all databases from the above, there is no guarantee 
+that some specific and/or propriety database functionality is supported. 
+Here we name a few tested databases:
 
 .. _MySQL deployment on Windows: https://www.radishlogic.com/coding/python-3/installing-mysqldb-for-python-3-in-windows/
 
