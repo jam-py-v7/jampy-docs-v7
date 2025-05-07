@@ -4,7 +4,7 @@ on_convert_report
 
 .. py:function:: on_convert_report(report)
 
-**domain**: client 
+**domain**: server 
 
 **language**: python
 
