@@ -86,8 +86,8 @@ In the bottom-right corner of the Dialog form there are two buttons:
 * **Cancel** - click the buttons to cancel the operation.
 
 .. note::
-    You can create new or modify existing fields and set **Primary key field**, 
-    **Deleted flag field** and **Master ID field**, **Master record id field** 
+    You can create new or modify existing fields and set **Primary key field** 
+    and **Deleted flag field** 
     attributes only when creating a new group or editing an empty one.
     
     For existing detail groups, that already own items you can only change 

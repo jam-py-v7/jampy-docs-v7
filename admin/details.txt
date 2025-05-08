@@ -4,7 +4,7 @@ Details
 
 The Detail in Jam.py V7 is any database table linked in a way of Master/Details
 relationship.
-To group the database tables logically, we might use the Details Group
+To group the database tables logically, we might use the :doc:`Details group <groups/table_group_editor>`
 to "store" a detail of an item, as seen on below screenshot.
 
 

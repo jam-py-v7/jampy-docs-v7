@@ -2,6 +2,15 @@
 How to create registration form
 ===============================
 
+This part is relevant for Jam.py V5. For V7, please visit:
+
+https://groups.google.com/g/jam-py/c/DwALkbBsFcw/m/MujcOlgYAAAJ
+
+or download example from here:
+
+https://drive.google.com/file/d/1Gty1bC2I3srFo9XeQ0dXdAdnYeJbwoeB/view?usp=drive_link
+
+
 In this topic we'll assume that you have created a :doc:`users </how_to/authentication/how_to_authenticate_from_custom_users_table>` item from the 
 previous topic.
 
