@@ -1,19 +1,11 @@
 ==================================
-Integration with existing database
+Importing existing database tables
 ==================================
 
-You can use Jam.py with existing database, that is supported by the framework.
+For importing existing database tables: 
 
-* Create a new project with existing database.
+* Create a new project with connection to existing database.
 
-* If you want to import tables in catalogs or journals groups, delete 
-  :doc:`Common fields </programming/data/common_fields>`: 
-  
-  Select Groups node in the project tree, dbl click corresponding group and delete
-  common fields.
-  
-  Or create new empty groups.
-  
 * Select Project node and click Database button. Set 
   :doc:`DB manual mode </admin/project/database>`
   to true.
@@ -21,6 +13,11 @@ You can use Jam.py with existing database, that is supported by the framework.
 * Select group you want to import a table to and click Import button. 
 
 * In the form that will appear dbl click on the table to import it.
+
+.. image:: _images/Import_tables_jampy.png
+	:align: center
+	:alt: import_tables_jampy.png
+
 
 * In the 
   :doc:`Item Editor Dialog </admin/items/item_editor_dialog>`
