@@ -39,7 +39,7 @@ The ``options`` parameter is an object that may have following attributes:
   * warning
   * danger
   
-* ``image`` - an icon class, one of the icons BS5 icon i.e. bi-mailbox, bi-printer
+* ``image`` - an icon class, one of the icons by Glyphicons from http://getbootstrap.com/2.3.2/base-css.html
 
 * ``secondary``: if this attribute is set to true, the button will be right aligned if
   **Buttons on top** attribute of the 
@@ -64,8 +64,8 @@ Examples
   
   function on_view_form_created(item) {
       if (!item.view_form.hasClass('modal')) {    
-          var print_btn = item.add_view_button('Print', {image: 'bi bi-printer'}),
-              email_btn = item.add_view_button('Send email', {image: 'bi bi-mailbox'});
+          var print_btn = item.add_view_button('Print', {image: 'icon-print'}),
+              email_btn = item.add_view_button('Send email', {image: 'icon-pencil'});
           email_btn.click(function() { send_email() });
           print_btn.click(function() { print(item) });
       }

@@ -48,7 +48,7 @@ then the event handler of the item itself. After that the JQuery stopPropagation
 method of the event is called.
 
 If the form is modal, shows it. Before showing the form the method applies 
-options specidied in the 
+options specified in the 
 :doc:`view_options <at_view_options>` 
 attribute.
 

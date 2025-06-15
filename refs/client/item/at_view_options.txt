@@ -67,7 +67,7 @@ view_details        the list of detail names, that will be displayed
                     with class 'view-detail' (the default view form template have 
                     this div)
                     
-detail_height       the height of the details desplayed in the view form,
+detail_height       the height of the details displayed in the view form,
                     if not specified the height of the detail table is 200px
 
 modeless            if true, the form will be displayed as modeless

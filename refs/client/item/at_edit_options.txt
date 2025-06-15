@@ -56,7 +56,7 @@ edit_details        the list of the detail names, that will be available for
                     div with class 'edit-detail' (the default edit form template 
                     have this div)
 
-detail_height       the height of the detail desplayed in the view form,
+detail_height       the height of the detail displayed in the view form,
                     if not specified the height of the detail table is 200px
 
 fields              specify the list of field names that the 

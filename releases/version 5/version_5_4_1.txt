@@ -14,7 +14,7 @@ Application builder
 
 * The "View form" dialog lets now setup, besides fields used to create tables,
   table options such as columns to set sorting order and summary fields.
-  Use "Form" tab to setup from options including detail that will be desplayed in
+  Use "Form" tab to setup from options including detail that will be displayed in
   the view form
 
 * The "Edit form" dialog allows to create tabs and bands to display field
@@ -24,12 +24,12 @@ Application builder
 Library
 =======
 
-* First stage of internalization completed. Developpers can add their languages
+* First stage of internalization completed. Developers can add their languages
 
 * Processing of form events worked over. See _process_event method in jam.js
 
 * To avoid concurrency problems and memory leaks the task tree on the server
-  side is imutable now, except when on_created event is executed.
+  side is immutable now, except when on_created event is executed.
   You must use copy method when you need to call open method or want to
   change attributes of items in the event handlers or functions on the server
 

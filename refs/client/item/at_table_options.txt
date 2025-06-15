@@ -58,7 +58,7 @@ expand_selected_row if row_line_count is set and expand_selected_row is
 
 title_word_wrap     specifies if the column title text can be wrapped.
 
-column_width        the width of the columns are calulated by a Web Browser. 
+column_width        the width of the columns are calculated by a Web Browser. 
                     You can use this option to force the width of columns. The option is an 
                     object, key values of which are field names, the values are column widths
                     as CSS units

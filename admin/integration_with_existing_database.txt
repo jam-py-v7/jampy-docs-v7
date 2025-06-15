@@ -14,7 +14,7 @@ For importing existing database tables:
 
 * In the form that will appear dbl click on the table to import it.
 
-.. image:: _images/Import_tables_jampy.png
+.. image:: /admin/_images/Import_tables_jampy.png
 	:align: center
 	:alt: import_tables_jampy.png
 

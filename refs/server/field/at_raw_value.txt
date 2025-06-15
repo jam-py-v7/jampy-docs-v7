@@ -20,7 +20,7 @@ Other properties such as
 :doc:`value <at_value>`
 and
 :doc:`text <at_text>`
-use convesion.
+use conversion.
 So the
 :doc:`value <at_value>`
 property converts the ``null`` value to ``0`` for the numeric fields. 

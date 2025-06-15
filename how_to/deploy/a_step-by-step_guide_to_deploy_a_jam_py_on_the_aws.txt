@@ -145,5 +145,5 @@ I hope someone finds it useful.
     nano /var/log/apache2/error.log
 
 
-*This was initialy published by Simon Cox on*
+*This was initially published by Simon Cox on*
 https://groups.google.com/forum/#!msg/jam-py/Zv5JfkLRFy4/22tolZ-hAQAJ

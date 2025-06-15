@@ -94,7 +94,7 @@ edit form
 * **Edit details** - click the button to the right of the input field to select 
   details, that will be available for editing in the edit form
 
-* **Detail height** - an integer, the height of the details desplayed in the 
+* **Detail height** - an integer, the height of the details displayed in the 
   edit form, if not set, the height of the detail table is 262px
 
 * **Buttons on top** - if this check box is checked the buttons are displayed on 

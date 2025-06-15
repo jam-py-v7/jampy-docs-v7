@@ -2,7 +2,7 @@
 Demo project
 ============
 
-The framework has a full-fledged demo application that demonstrates programming 
+The framework has a full fledged demo application that demonstrates programming 
 techniques used in the framework. 
 
 The demo is located in the demo folder of the Jam.py package downloaded from Github. There is also a stand alone or an 
@@ -35,13 +35,13 @@ open a new page in a browser and enter
 
 
 
-.. image:: _images/demo_jampy.png
+.. image:: /intro/_images/demo_jampy.png
 	:scale: 70 %
 	:align: center
 	:alt: Demo application
 
 
-.. image:: _images/demo_admin_jampy.png
+.. image:: /intro/_images/demo_admin_jampy.png
 	:scale: 70 %
 	:align: center
 	:alt: Application builder of demo project

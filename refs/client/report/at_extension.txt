@@ -14,10 +14,10 @@ Description
 ===========
 
 Use ``extension`` attribute to specify a report type. The server, based on the 
-report template, first generates **ods** file. And if report extention is other 
-that **ods** performs convertion using the LibreOffice.
+report template, first generates **ods** file. And if report extension is other 
+that **ods** performs conversion using the LibreOffice.
 
-The attribute value can be any extension that LibreOffice supports convertion to.
+The attribute value can be any extension that LibreOffice supports conversion to.
 
 Example
 =======

@@ -27,7 +27,7 @@ or
 to put an item into 
 insert state. 
 
-Posting or canceling edits, insertions, or deletions, changes ``item_state`` 
+Posting or cancelling edits, insertions, or deletions, changes ``item_state`` 
 from its current state to browse. Closing a dataset changes its state to 
 inactive.
 

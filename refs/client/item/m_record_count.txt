@@ -13,7 +13,7 @@ record_count
 Description
 ===========
 
-Call ``record_count`` to get the total number of records ownered by the item's 
+Call ``record_count`` to get the total number of records owned by the item's 
 dataset.
 
 Example
