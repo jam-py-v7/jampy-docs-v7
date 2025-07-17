@@ -22,6 +22,18 @@ The ``item`` parameter is the item that triggered the event.
 
 The ``event`` is JQuery event object.
 
+Example for ``CTR+Enter``:
+
+.. code-block:: js
+
+    function on_edit_form_keyup(item, event) {
+        if (event.keyCode === 13 && event.ctrlKey === true){
+            item.edit_form.find("#ok-btn").focus(); 
+            item.apply_record();
+        }
+    }
+
+
 See also
 ========
 

@@ -13,6 +13,9 @@ on_open(item, params)
 Description
 ===========
 
+Please see :doc:`verson 7 </releases/version_7/index>` ``on_before_open`` and 
+``on_after_open``.
+
 Write ``on_open`` event handler when you need to override the standard 
 procedure of fetching the records from the dataset during the execution of the 
 open method on the

@@ -22,6 +22,27 @@ The ``item`` parameter is the item that triggered the event.
 
 The ``event`` is JQuery event object.
 
+Example for ``CTRL+Ins`` and ``CTRL+Del``:
+
+.. code-block:: js
+
+    function on_view_form_keyup(item, event) {
+        if (event.keyCode === 45 && event.ctrlKey === true){
+            if (item.master) {
+                item.append_record();
+            }
+            else {
+                item.insert_record();                
+            }
+        }
+        else if (event.keyCode === 46 && event.ctrlKey === true){
+            // item.delete_record(); 
+            item.alert('Cannot be deleted on Demo!');
+        }
+    }
+
+
+
 See also
 ========
 

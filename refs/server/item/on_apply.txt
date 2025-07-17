@@ -13,6 +13,9 @@ on_apply(self, delta, params, connection)
 Description
 ===========
 
+Depreciated. Please see :doc:`verson 7 </releases/version_7/index>`  ``on_before_apply_record``
+and ``on_after_apply_record``.
+
 Write ``on_apply`` event handler when you need to override the standard data saving 
 procedure during the execution of the apply method on the
 :doc:`client </refs/client/item/m_apply>`

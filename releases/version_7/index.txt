@@ -27,8 +27,10 @@ Here are the main differences to Jam.py V5, written in Nov. 2022. by Andrew Yush
     The unlimited level of nested details is supported.
 
     Reading and writing of the data are changed.
+    
     The ``on_open`` and ``on_apply`` events are deprecated.
-    Instead of them ``on_before_open``,  ``on_after_open`` and ``on_before_apply_record``, ``on_after_apply_record`` events are introduced.
+    
+    Instead of them, ``on_before_open``,  ``on_after_open`` and ``on_before_apply_record``, ``on_after_apply_record`` events are introduced.
 
     The ``on_before_open`` event is triggered before the sql request is executed and can be used to validate the request and
     add additional filters. The ``on_after_open`` is triggered after the sql request is executed and has a dataset as a parameter
