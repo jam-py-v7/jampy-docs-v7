@@ -1,0 +1,36 @@
+========================
+on_before_apply_record
+========================
+
+on_before_apply_record(self, delta, params, connection)
+
+**domain**: server
+
+**language**: python
+
+**class** :doc:`Item class </refs/server/item_api>`
+
+Description
+===========
+
+
+Write ``on_before_apply_record`` event handler when you need to override the standard data saving 
+procedure during the execution of the apply method on the
+:doc:`client </refs/client/item/m_apply>`
+or
+:doc:`server <m_apply>`.
+
+.. code-block:: py
+
+    def on_before_apply_record(item, delta, params, connection):
+        if delta.paid.cur_value:
+            item.abort('Operation prohibited. The invoice is paid')
+
+See also
+========
+
+:doc:`Server side programming </programming/server/index>`
+
+:doc:`on_apply events </programming/server/on_apply_events>`
+
+:doc:`Modifying datasets </programming/data/modifying_datasets>`

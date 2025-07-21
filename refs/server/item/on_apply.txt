@@ -13,8 +13,8 @@ on_apply(self, delta, params, connection)
 Description
 ===========
 
-Depreciated. Please see :doc:`verson 7 </releases/version_7/index>`  ``on_before_apply_record``
-and ``on_after_apply_record``.
+Please see :doc:`verson 7 </releases/version_7/index>`  ``on_before_apply_record``
+and ``on_after_apply_record``, for before and after events.
 
 Write ``on_apply`` event handler when you need to override the standard data saving 
 procedure during the execution of the apply method on the
@@ -92,9 +92,9 @@ to the database table.
     :doc:`refresh_page </refs/client/item/m_refresh_page>` to display these
     changes.
 
-In the following code, while saving the changes made to the invoices, the 
-application as well updates the value of the ``tracks_sold`` field for tracks in 
-this invoices. All this is done in one transaction.
+In the following code for Jam.py V5, while saving the changes made to the invoices, the 
+application will update the value of the ``tracks_sold`` field for tracks and current 
+invoice. All this is done in one transaction.
 
 .. code-block:: py
 
@@ -125,6 +125,44 @@ this invoices. All this is done in one transaction.
 
 In the previous examples the ``on_apply`` event handler returns ``None`` so after 
 that the ``apply_delta`` method is executed by the application.
+
+In the following code for Jam.py V7 we do the same and much more as the Server side calculation.
+Note ``calc_track`` function on Details:
+
+.. code-block:: py
+
+    def on_apply(item, delta, params, connection):
+        if not delta.rec_deleted():
+            calc_invoice(delta, connection)
+
+    def calc_invoice(delta, connection):
+        invoice = task.invoices.copy(handlers=False);
+        invoice.set_where(id=delta.id.value)
+        invoice.open(connection=connection)
+        invoice.subtotal.value = 0
+        invoice.tax.value = 0
+        invoice.total.value = 0
+        invoice.invoice_table.open(connection=connection)
+        for t in invoice.invoice_table:
+            task.invoice_table.calc_track(t)
+            invoice.subtotal.value += t.amount.value
+            invoice.tax.value += t.tax.value
+            invoice.total.value += t.total.value
+        invoice.apply(connection=connection)
+        delta.copy_record_fields(invoice, copy_system_fields=True)
+
+On Invoices Detail ``Server Module``, there is:
+
+.. code-block:: py
+
+    def calc_track(item):
+        item.amount.value = item.quantity.value * item.unitprice.value
+        item.tax.value = item.amount.value * item.master.taxrate.value / 100
+        item.total.value = item.amount.value + item.tax.value
+        item.paid.value = item.master.paid.value
+
+
+
 
 The more general case is: 
 
