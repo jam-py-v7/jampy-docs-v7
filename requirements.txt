@@ -1,4 +1,4 @@
 sphinx_rtd_theme
 sphinx_copybutton
 sphinx_sitemap==2.5.0
-sphinx-llms-txt
+sphinx-llms-txt-jampy
