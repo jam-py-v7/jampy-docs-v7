@@ -73,9 +73,10 @@ The working example for serving robots.txt file:
 	        else:
 	            return task.redirect('/login.html')
 	    elif parts[0] == 'robots.txt':
-	            return task.serve_page(os.path.join(task.work_dir, 'robots.txt'))
+	        if task.logged_in(request):
+	            return task.serve_page('robots.txt')
 
-The ``robots.txt`` file exist within the application folder.
+The ``robots.txt`` file should exist within the application folder.
 
 See also
 ========
