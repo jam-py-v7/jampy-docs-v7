@@ -1,0 +1,12 @@
+=========
+on_logout
+=========
+
+on_logout(task, request)
+
+**domain**: server
+
+**language**: python
+
+**class** :doc:`Task class </refs/server/task_api>`
+

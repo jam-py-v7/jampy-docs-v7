@@ -4,4 +4,4 @@ on_generate
 
 See:
 
-:doc:`Reports class </refs/server/reports/on_generate>`
+:doc:`Reports class </refs/server/report/on_generate>`
