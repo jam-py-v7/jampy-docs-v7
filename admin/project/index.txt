@@ -10,6 +10,11 @@ in the project tree, the Application builder page will look as follows:
 	:align: center
 	:alt: Project management
 
+
+As seen on top right corner, The Name of the application is displayed, name of the database used, application version number, and 
+``Jam.py`` framework version number. 
+
+
 Click on the links below to see the purpose of the buttons in the right panel of 
 the page.
 

@@ -1,4 +1,4 @@
-==========
+fsecond==========
 Parameters
 ==========
 
@@ -58,7 +58,7 @@ On the General tab, you can specify general parameters of the project:
 * **History item** - to specify item, that will store change history, see 
   :doc:`Saving audit trail/change history made by users </admin/saving_history>`
 
-* **Session timeout (seconds)** - number of second of inactivity that is allowed 
+* **Session timeout (seconds)** - number of seconds of inactivity that is allowed 
   before the session expires.
 
 * **Session ignore change ip** - if false, the session is only valid when 
