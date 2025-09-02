@@ -73,11 +73,8 @@ You’ll see the similar output on the command line::
 If we open a Web browser and visit the app, the below message will display:
 
 
-.. warning::
-
-    Information
-    
-    The creation of the project has not been completed yet. Please run the Application Builder.
+.. image:: _images/run_builder_jampy.png
+	:alt: Jam.py new project
 
 
 Open a Web browser and go to “/builder.html” on your local domain – e.g.:
