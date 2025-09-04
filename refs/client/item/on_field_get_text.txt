@@ -13,7 +13,7 @@ on_field_get_text(field)
 Description
 ===========
 
-Write an ``on_field_get_text`` event handler to specify the html that will be 
+Write an ``on_field_get_text`` event handler to specify the ``text`` that will be 
 inserted in the table cell for the field.
 
 
@@ -21,6 +21,8 @@ The ``field`` parameter is the field whose
 :doc:`display_text </refs/client/field/at_display_text>`
 is processed. To get the item that owns the field, use the
 :doc:`owner </refs/client/field/at_owner>` attribute of the field.
+
+The function used to concatenate two or more fields.
 
 Example
 =======

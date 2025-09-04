@@ -13,7 +13,7 @@ on_field_get_html(field)
 Description
 ===========
 
-Write an ``on_field_get_html`` event handler to specify the html that will be 
+Write an ``on_field_get_html`` event handler to specify the ``html`` that will be 
 inserted in the table cell for the field.
 
 If the event handler does not return a value, the application checks if 
