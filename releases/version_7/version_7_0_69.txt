@@ -1,0 +1,5 @@
+===============
+Version 7.0.64
+===============
+
+Added links to events and modules, and ACE shortcuts button.
