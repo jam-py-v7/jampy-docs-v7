@@ -26,7 +26,7 @@ Here are Andrew's notes:
     This is done in the admin.py module that is located in the admin folder of the package.
     The task tree of the project is created when the first request is received by the web application.
     The task.py module from the 'admin' folder of the package contains the code that creates the project Task tree.
-    It uses the admin to read the data from admin.sqlite database.
+    It uses the administrator user to read the data from admin.sqlite database.
     To speed up the process the information from corresponding tables is loaded to dictionaries.
 
 

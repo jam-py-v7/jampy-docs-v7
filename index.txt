@@ -40,11 +40,17 @@ and:
 https://jampy-docs-v7.readthedocs.io/en/latest/llms.txt
 
 
-How the documentation is organized
+The Github Jam.py repository:
+
+https://github.com/jam-py-v5/jam-py/
+
+
+
+Documentation Layout Overview
 ==================================
 
-Here is an overview of how the documentation is organized, to
-help you find out where to look for specific things:
+Here is an overview of the documentation layout, to
+help you find out where to look for specific details:
 
 :doc:`Getting started <intro/index>` topics describe how to install the framework, create 
 a new project, develop a web application step-by-step, and deploy it.
@@ -65,7 +71,7 @@ Jam.py classes APIs.
 :doc:`How to <how_to/index>` contains code examples that can be useful to quickly
 accomplish common tasks.
 
-Or visit the
+Please visit the
 :doc:`table of contents <contents>` or even 
 
 `Jam.py Application Design Tips`_, for a detailed steps how to build the applications or migrate from MS Access.
@@ -76,8 +82,6 @@ Or visit the
 To download this document as a single PDF, please visit:
 
 https://jampy-docs-v7.readthedocs.io/_/downloads/en/latest/pdf/
-
-The PDF is built instantly after every commit into the repository. Hence, some data on this site might be older than the PDF.  
 
 
 Video Tutorials
