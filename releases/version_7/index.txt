@@ -10,6 +10,7 @@ Version 7
    version_7_0_53
    version_7_0_64
    version_7_0_69
+   version_7_0_70
    
    
 The version 7 is still under development and accepting pull requests. The biggest difference to V5 is routing

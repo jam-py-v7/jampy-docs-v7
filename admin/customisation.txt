@@ -71,6 +71,6 @@ files from ``jam_files`` folder into to distribution folders:
 
 .. code-block:: console
   
-  	$ cp -fr jam_files\* ../jam/.
+  	$ cp -fr jam_files/* ../jam/.
 
 We can now install updated version as usual.

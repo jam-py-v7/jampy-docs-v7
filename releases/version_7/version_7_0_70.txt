@@ -1,0 +1,11 @@
+===============
+Version 7.0.70
+===============
+
+First version with Monaco editor released.
+
+Use from Jam.py 7.0.71:
+
+``CTRL+ALT+SHIFT+W`` shortcut to close editor.
+
+``CTRL+ALT+ left or right`` shortcut to move from/to editors.
