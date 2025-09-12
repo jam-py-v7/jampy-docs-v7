@@ -16,7 +16,7 @@ Next, clone your fork::
 
 
 To add a new test for the front-end, add JavaScript file into project/js folder.
-Let's say we wand to test ``user`` table with CRUD, using one field called ``username``.
+Let's say we want to test ``user`` table with CRUD, using one field called ``username``.
 
 The project folder has the below structure::
 
@@ -71,12 +71,12 @@ The index.html might look like below:
             </head>
             <body>
                 <div id="mocha"></div>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/11.7.2/mocha.js"</script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/11.7.2/mocha.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/chai@4.3.4/chai.js"></script>
                 <script>mocha.setup('bdd')</script>
                 <script src="jam/js/jquery.js"></script>
                 <script src="jam/js/bs5/bootstrap.bundle.js"></script>
-		        <script src="jam/js/zebra_datepicker.js"></script>
+                <script src="jam/js/zebra_datepicker.js"></script>
                 <script src="jam/js/jquery.maskedinput.js"></script>
                 <script type="module" src="jam/js/jam.js"></script>
 
