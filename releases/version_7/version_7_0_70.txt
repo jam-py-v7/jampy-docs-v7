@@ -10,12 +10,22 @@ In version 7.0.71, the Modal Form closing bug fixed.
 In version 7.0.72, below Monaco editor shortcuts were added:
 
 
-``CTRL+ALT+SHIFT+W`` shortcut to close the editor.
 
-``CTRL+ALT+←/→`` shortcut to move from/to editors.
+.. admonition:: Monaco Shortcuts
+
+    ``CTRL+ALT+SHIFT+W`` shortcut to close the editor.
+
+    ``CTRL+ALT+←/→`` shortcut to move from/to editors.
 
 With Apple keyboard:
 
-``control+Option+Shift+W`` shortcut to close the editor.
+.. admonition:: Monaco Shortcuts
 
-``Cmd(⌘)+Option+←/→`` shortcut to move from/to editors.
+    ``control+Option+Shift+W`` shortcut to close the editor.
+
+    ``Cmd(⌘)+Option+←/→`` shortcut to move from/to editors.
+
+
+.. admonition:: Monaco Shortcuts
+
+     In some implementations of the Monaco Editor, you can find the Command Palette in the editor's context (right-click) menu.
