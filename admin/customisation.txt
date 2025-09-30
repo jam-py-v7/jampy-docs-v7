@@ -29,13 +29,19 @@ Here are Andrew's notes:
     It uses the administrator user to read the data from admin.sqlite database.
     To speed up the process the information from corresponding tables is loaded to dictionaries.
 
+First, start with forking `Jam.py-v7`_.
 
-After downloading git repository, changing the builder requires below steps:
+.. _Jam.py-v7: https://github.com/jam-py-v5/jam-py-v7
 
+Next, clone your fork::
+
+        ...\> git clone https://github.com/YourGitHubName/jam-py-v7.git
+
+and start the server:
 
 .. code-block:: console
 
-    $ cd builder
+    $ cd jam-py-v7/builder
     $ ./server.py
 
 
@@ -73,4 +79,15 @@ files from ``jam_files`` folder into to distribution folders:
   
   	$ cp -fr jam_files/* ../jam/.
 
-We can now install updated version as usual.
+To increase the Jam.py version number, we edit below file:
+
+
+.. code-block:: console
+  
+  	$ jam/__init__.py
+
+
+We can now install updated version as usual with the new version number. 
+
+If all good to go, create a Github ``pull`` request with the changes.
+

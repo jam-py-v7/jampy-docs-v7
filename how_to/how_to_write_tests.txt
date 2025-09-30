@@ -7,12 +7,12 @@ The examples are in tests folder.
 
 First, start with forking `Jam.py-v7`_.
 
-.. _Jam.py-v7: https://github.com/jam-py-v5/jam-py
+.. _Jam.py-v7: https://github.com/jam-py-v5/jam-py-v7
 
 Next, clone your fork::
 
-        ...\> git clone https://github.com/YourGitHubName/jam-py.git
-        ...\> cd jam-py/tests/project
+        ...\> git clone https://github.com/YourGitHubName/jam-py-v7.git
+        ...\> cd jam-py-v7/tests/project
 
 
 To add a new test for the front-end, add JavaScript file into project/js folder.
