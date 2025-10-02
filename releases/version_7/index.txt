@@ -15,7 +15,7 @@ Version 7
    
 The version 7 is still under development and accepting pull requests. The biggest difference to V5 is routing
 support, Bootstrap 5 and working with Details, enabling modern support for mobile devices. In addition, the Monaco
-editor will be introduced witing the Application Builder.
+editor will be introduced within the Application Builder.
 
 Here are the main differences to Jam.py V5, written in Nov. 2022. by Andrew Yushev:
 
