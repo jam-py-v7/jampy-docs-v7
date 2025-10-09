@@ -32,6 +32,7 @@ modal form:
   the task 
   :doc:`templates </refs/client/task/at_templates>` 
   attribute and used as a form html template when creating a form
+* ``label_on_top`` - the label displayed on top
   
 The 
 :doc:`edit_options </refs/client/item/at_edit_options>` 

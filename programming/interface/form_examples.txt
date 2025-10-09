@@ -97,7 +97,8 @@ The edit form for **Albums** catalog looks as follows:
 Edit form template with tabs
 ----------------------------
 
-This example uses the Bootstrap tabs:
+This example uses the Bootstrap 3 tabs. It needs update due to
+href not used for Boostrap 5:
 
 .. code-block:: html
 
