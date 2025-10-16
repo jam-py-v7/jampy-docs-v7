@@ -18,7 +18,9 @@ the application creates a copy of the lookup item of the field and
 triggers ``on_field_select_value`` event. Use ``on_field_select_value`` to 
 specify fields that will be displayed, set up filters for the lookup item, before
 it will be opened.
-In short, ``on_field_select_value`` is used to locate the record on the lookup table.
+
+In short, ``on_field_select_value`` is used for locating or identifying the record
+on the lookup table when we click on the lookup icon.
 
 
 The ``field`` parameter is the field whose data will be selected.
