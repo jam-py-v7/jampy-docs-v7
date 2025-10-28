@@ -1,6 +1,6 @@
-=============================================
-How can I use data from other database tables
-=============================================
+=====================================================
+How can I use data from some other database(s) tables
+=====================================================
 
 You can use data from other database tables.
 
@@ -14,10 +14,10 @@ You can do it the following way:
 * Import tables information as described in the
   :doc:`Integration with existing database </admin/integration_with_existing_database>`
   
-* Select project node in the task tree, click **Database** button restore previous values.
+* Select project node in the task tree, click **Database** button arestore previous values.
 
-Then in the server module of the new items you must add code to read and write 
-the data to the database
+Then in the ``Server module`` of the new items, add code to read and write 
+the data to the database tables.
 
 Below is the code for MySQL database (auto incremented primary field):
 
@@ -129,3 +129,5 @@ from task client module:
   You can try to create the history table in the other database and write the
   ``on_open`` and ``on_apply`` event handlers for it.
 
+.. note::
+  The above procedure was not tested with Jam.py V7.
