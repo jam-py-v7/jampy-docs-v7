@@ -4,8 +4,8 @@ How to implement some sort of basic multi-tenancy? For example, to have users wi
 
 You can implement a multi-tenancy using Jam.py.
 
-For example, if some item have a user_id field, the following code in the 
-server module of the item will do the job:
+For example, if some item has a user_id field (type INT), the following code in the 
+server module of the item will do the job. The authentication must be enabled:
 
 .. code-block:: py
 
