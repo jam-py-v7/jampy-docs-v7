@@ -2,17 +2,21 @@
 How to migrate v5 project to v7
 ==================================
 
-For any v5 project, backup **index.html** file first and copy **index.html** and **template.html** from v7 Jam.py ``Demo`` application into the application folder.
+For any v5 project, backup **index.html** file first and copy **index.html** and
+**template.html** from v7 Jam.py ``Demo`` application into the application folder.
+Or, copy the same files from a new v7 project created with ``jam-project.py``.
 
-Uninstall the v5 Jam.py and install the v7.
 
-Start the application as usual. 
+Uninstall the v5 Jam.py and install the v7. Or run two virtual Python instances 
+with both Jam.py versions.
+
+Start the application as usual with v7 Jam.py version.
 
 Address the following:
 
 #. The biggest obstacle to move a Jam.py v5 application is the "Edit Lock" (record locking), enabled on the table(s). The Jam.py v7 is expecting a  `record_version` (INT) field for every table with the Edit Lock.
 
-   There are two options when migrating to V7. One is to disable the "Edit Lock" before migration, and the second option is to add the `record_version` field to affected tables before the migration. 
+   There are two options when migrating to v7. One is to disable the "Edit Lock" before migration, and the second option is to add the `record_version` field to affected tables before the migration. 
 
    After the field is added to the database structure, we need to add it to the Application Builder manually, with "DB Manual Mode" turned ON for every table with "Edit Lock" enabled. The "record version" option should be set with `record_version` field.
 
@@ -22,13 +26,13 @@ Address the following:
 
 #. **index.html** also needs changing, due to Boostrap 5 dependencies. Please see below example.
 
-#. Foreign Key support is dropped at v7. This means if there are any Foreign Keys created at V5, there will be no option to manage it at v7.
+#. Foreign Key support is dropped at v7. This means if there are any Foreign Keys created at v5, there will be no option to manage it at v7.
 
 
-#. The Jam.py V7 introduced the calculated field. It is now possible to use the server side functions (SUM, COUNT, MIN, MAX, AVG), for the lookup to a table field in a Master/Detail scenario. The Users might review the server side calculations code and replace it with a calculated fields, if appropriate.
+#. The Jam.py v7 introduced the calculated field. It is now possible to use the server side functions (SUM, COUNT, MIN, MAX, AVG), for the lookup to a table field in a Master/Detail scenario. The Users might review the server side calculations code and replace it with a calculated fields, if appropriate.
 
 
-#. Jam.py V7 is now utilising the Python dependencies and will automatically install needed libraries with the initial install. This is different to v5, where all dependencies were "locked in" with the Jam.py distribution, enabling a single ``jam`` folder for deployment with the application.
+#. Jam.py v7 is now utilising the Python dependencies and will automatically install needed libraries with the initial install. This is different to v5, where all dependencies were "locked in" with the Jam.py distribution, enabling a single ``jam`` folder for deployment with the application.
 
 
 #. For applications with Jam.py version 5.x or below, replace the **Task/Client** module code with **Task/Client** module code from ``Demo`` application or the new v7 project. Than, add a custom code from v5 **Task/Client** module, if there was any. 
