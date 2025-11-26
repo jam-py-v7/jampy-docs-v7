@@ -18,10 +18,10 @@ method was called or item has filters whose values have been set.
 When ``where`` parameter is omitted the parameter passed to the ``set_where`` 
 method are used.
 
-For example on the client in the following code in the first call of the ``open``
+For example, on the ``Client Module`` in the following code, in the first call of the ``open``
 method the ``where`` option will be used to filter records, 
 in the second call the parameters passed to ``set_where`` and only the third 
-time the value of ``invoicedate1`` filter will be used
+time the value of ``invoicedate1`` filter will be used:
 
 .. code-block:: js
 
@@ -42,7 +42,7 @@ time the value of ``invoicedate1`` filter will be used
     
     date = datetime.datetime.now() - datetime.timedelta(days=3*365)
 
-The same code on the server looks the following way:
+The same code within the ``Server Module`` looks the following way:
 
 .. code-block:: py
 
@@ -85,10 +85,19 @@ to filter records:
    ``ENDWITH``, 'endwith', ``FILTER_ENDWITH``, uses ``LIKE`` with the "%" sign to find records where field value ends with a search string
    ``CONTAINS ALL``, 'contains_all', ``FILTER_CONTAINS_ALL``, uses ``LIKE`` with the "%" sign to find records where field value contains all words of a search string
   
-The ``where`` the parameter of the ``open`` method is a dictionary, whose keys 
+The ``where`` parameter of the ``open`` method is a dictionary, whose keys 
 are the names of the fields that are followed, after double underscore, by a 
 filter symbol. For ``EQ`` filter the filtering symbol '__eq' can be omitted. 
 For example ``{'id': 100}`` is equivalent to ``{'id__eq': 100}``.
+
+The '__isnull' filter symbol is used with Boolean. 
+
+For example, at the above ``Server Module`` code:
+
+.. code-block:: py
+
+    invoices.set_where(invoicedate__isnull = True)
+
 
 
 See also
