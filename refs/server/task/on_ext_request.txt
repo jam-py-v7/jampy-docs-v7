@@ -63,3 +63,8 @@ The server will process this request and return the sum of parameters. The
         if reqs[2] == 'get_sum':
             return params[0] + params[1] + params[2] 
 
+
+See also
+========
+
+:doc:`on_request <on_request>`

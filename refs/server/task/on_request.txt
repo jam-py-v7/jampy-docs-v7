@@ -22,16 +22,75 @@ The ``task`` parameter is a reference to the
 Example
 =======
 
+Code added to project Task/Server Module:
 
 .. code-block:: py
 
-	def on_request(task, request):
-		parts = request.path.strip('/').split('/')
-		if parts[0] == 'register.html':
-		    return task.serve_page('register.html')
+  	def on_request(task, request):
+  		parts = request.path.strip('/').split('/')
+  		if parts[0] == 'register.html':
+  		    return task.serve_page('register.html')
+		
+		    
+The ``register.html`` file should exist within the application folder.
+
+The headers usage example
+=========================
+
+.. code-block:: py		    
+
+    def on_request(task, request):
+        from jam.wsgi import Response
+        from werkzeug.exceptions import MethodNotAllowed
+    
+        parts = request.path.strip('/').split('/')
+        
+        if not parts[0]:
+            if task.logged_in(request):
+                return task.serve_page('index.html')
+            else:
+                return task.redirect('/login.html')
+    
+        elif parts[0] == 'test_test':
+            if request.method == 'POST':
+                print(request.method )
+                print(request.headers)
+                api_key = request.headers['Api-key']
+                    
+                print(api_key)
+                return Response('Succesfull test!')
+            if request.method == 'GET':
+                raise MethodNotAllowed()
+    
+
+
+Accessing the application with Curl command will reply with the result::
+
+    ...\> curl -X POST "http://127.0.0.1:8080/test_test"  -H "api-key: 122448"
+          Successful test!
+
+
+The server console displaying::
+
+    127.0.0.1 - - [10/Dec/2025 11:00:27] "POST /api HTTP/1.1" 200 -
+    POST
+    Host: 127.0.0.1:8080
+    User-Agent: curl/8.16.0
+    Accept: */*
+    Api-Key: 122448
+    Content-Length: 77
+    Content-Type: application/x-www-form-urlencoded
+    
+    122448
+
+
+
 
 See also
 ========
 
 :doc:`serve_page <m_serve_page>`
 
+:doc:`routing </admin/routing>`
+
+:doc:`register.html </how_to/authentication/how_to_create_registration_form>`

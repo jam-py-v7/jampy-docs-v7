@@ -84,3 +84,5 @@ See also
 :doc:`serve_page </refs/server/task/m_serve_page>`
 
 :doc:`redirect </refs/server/task/m_redirect>`
+
+:doc:`on_request </refs/server/task/on_request>`
