@@ -25,11 +25,10 @@ With Apple keyboard:
 
     ``Cmd(⌘)+Option+←/→`` shortcut to move from/to editors.
 
-
-In version 7.0.81, Traceback on new project fixed. Demo "view_first: true" changed to "view_first: false".
-
- 
-
 .. admonition:: Monaco Shortcuts
 
      In some implementations of the Monaco Editor, you can find the Command Palette in the editor's context (right-click) menu.
+
+
+In version 7.0.81, Traceback on new project fixed. Demo "view_first: true" changed to "view_first: false".
+
