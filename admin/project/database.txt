@@ -133,3 +133,17 @@ Oracle
 	:scale: 50%
 	:align: center
 	:alt: Oracle setup
+
+
+
+Databricks
+----------
+
+.. image:: /admin/_images/databricks_connection_jampy.pn
+	:scale: 50%
+	:align: center
+	:alt: Databricks setup
+
+
+.. note::
+   Databricks workspace/database name is typed as workspace.database in the database field.
