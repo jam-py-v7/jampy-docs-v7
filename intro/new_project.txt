@@ -116,7 +116,9 @@ Examples of database setups
 
 .. admonition:: Adapted from `Jam.py Design Tips`_
 
-    Jam.py supports many different database servers. For example PostgreSQL_, MariaDB_, MySQL_, MSSQL_, Oracle_, Firebird_, IBM_, SQLite_ and SQLite with SQLCipher_.
+    Jam.py supports many different database servers. For example PostgreSQL_, 
+    MariaDB_, MySQL_, MSSQL_, Oracle_, Firebird_, IBM_, SQLite_, Databricks_
+    and SQLite with SQLCipher_.
 
     If you are developing a small project or something you don't plan to deploy in
     a production environment, SQLite is generally the best option as it doesn't
@@ -134,8 +136,9 @@ Examples of database setups
     * If using MSSQL, the ``pymssql`` is needed.
     * If using Oracle, the `cx_Oracle`_ is needed, as well as Python headers (development files).
     * If using SQLCipher_,  ``sqlcipher3-binary`` package is needed for Linux. There is a standalone DLL for Windows available.
-    * If using IBM_,  ``ibm_db`` and ``ibm_db_dbi`` package is needed.
+    * If using IBM_ (TBA),  ``ibm_db`` and ``ibm_db_dbi`` package is needed.
     * If using Firebird,  ``fdb`` package is needed.
+    * If using Databricks, ``databricks-sql-connector`` is needed.
     * To generate reports, **LibreOffice** must be installed.
 
 
@@ -151,6 +154,7 @@ Examples of database setups
 .. _Firebird: https://firebirdsql.org/
 .. _SQLCipher: https://github.com/sqlcipher
 .. _IBM: https://www.ibm.com/support/pages/downloading-ibm-db2-version-115-linux-unix-and-windows
+.. _Databricks: https://www.databricks.com/blog/how-use-lakebase-transactional-data-layer-databricks-apps
     
 .. note::
 

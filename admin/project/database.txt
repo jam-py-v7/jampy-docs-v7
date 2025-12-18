@@ -56,11 +56,11 @@ Examples of database setups
 
     * If using SQLCipher_,  ``sqlcipher3-binary`` package is needed for Linux. There is a standalone DLL for Windows available.
 
-    * If using IBM_,  ``ibm_db`` and ``ibm_db_dbi`` package is needed.
+    * If using IBM_ (TBA),  ``ibm_db`` and ``ibm_db_dbi`` package is needed.
 
     * If using Firebird,  ``fdb`` package is needed.
     
-    * If using Databricks, ``databricks-sql-connector`` is needed.
+    * If using Databricks_, ``databricks-sql-connector`` is needed.
 
 
 .. _Jam.py Design Tips: https://jampy-application-design-tips.readthedocs.io/
@@ -75,6 +75,7 @@ Examples of database setups
 .. _Firebird: https://firebirdsql.org/
 .. _SQLCipher: https://github.com/sqlcipher
 .. _IBM: https://www.ibm.com/support/pages/downloading-ibm-db2-version-115-linux-unix-and-windows
+.. _Databricks: https://www.databricks.com/blog/how-use-lakebase-transactional-data-layer-databricks-apps
 
 
 Using MySQL on Windows is supported, please visit `MySQL deployment on Windows`_.
@@ -146,4 +147,8 @@ Databricks
 
 
 .. note::
-   Databricks workspace and database schema name is typed as ``workspace.database`` in the ``Database`` field.
+   Databricks workspace and database schema name is typed as ``workspace.database`` 
+   in the ``Database`` field. This is visible on the screenshot as 
+   ``samples.bakehouse`` in the upper right corner.
+   
+   Not all DDL is supported.
