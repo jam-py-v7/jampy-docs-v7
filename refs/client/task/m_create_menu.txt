@@ -79,14 +79,17 @@ To add a separator, an empty string ('') can be added to the list of menu object
 Example
 =======
 
+Modified a ``on_page_loaded`` with:
+
 .. code-block:: js
 
-    task.create_menu($("#menu"), $("#content"), {
-        splash_screen: '<h1 class="text-center">Jam.py Demo Application</h1>',
-        view_first: true
-    });
+        task.create_menu($("#menu"), $("#content"), {
+            custom_menu: menu,
+            splash_screen: '<h1 class="text-center">Jam.py Demo Application</h1>',
+            view_first: true
+        });
 
-An example with custom menu:
+An example with custom menu in the same ``on_page_loaded``:
 
 .. code-block:: js
 
@@ -103,5 +106,11 @@ An example with custom menu:
         splash_screen: '<h1 class="text-center">Jam.py Demo Application</h1>',
         view_first: true
     });
+
+For Demo application, the above will result with:
+
+.. image:: /programming/_images/custom_menu_jampy.png
+	:align: center
+	:alt: Custom Menu
 
 
