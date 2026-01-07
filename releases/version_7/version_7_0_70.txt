@@ -33,3 +33,5 @@ With Apple keyboard:
 In version 7.0.81, Traceback on new project fixed. Demo "view_first: true" changed to "view_first: false".
 
 In version 7.0.82, Databricks support was added.
+
+In version 7.0.86, Monaco Tab closing bug was fixed.
