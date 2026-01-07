@@ -49,7 +49,7 @@ import shlex
 # ones.
 
 #extensions = ['sphinx_rtd_theme']
-extensions = ['sphinx_sitemap', 'sphinx_copybutton', 'sphinxcontrib.jquery', 'sphinx_llms_txt']
+extensions = ['sphinx_sitemap', 'sphinx_copybutton', 'sphinxcontrib.jquery']
 html_baseurl = 'https://jampy-docs-v7.readthedocs.io/en/latest/'
 
 
@@ -450,7 +450,7 @@ latex_elements = {
 
 latex_documents = [
 
-  (master_doc, 'Jampydocumentation.tex', u'Jam.py documentation Documentation',
+  (master_doc, 'Jampydocumentation.tex', u'Jam.py Documentation',
 
    u'Andrew Yushev & Dean D. Babic', 'manual'),
 
