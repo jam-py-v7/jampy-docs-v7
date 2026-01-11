@@ -13,9 +13,9 @@ server
 Description
 ===========
 
-Use ``sever`` method to execute a function defined in the server module of an item.
+Use ``server`` method to execute a function defined in the server module of an item.
 
-``Sever`` method executes a function with a name ``func_name`` defined in the server 
+``Server`` method executes a function with a name ``func_name`` defined in the server 
 module of an item with parameters specified in ``params``. 
 
 If callback is specified, the function on the server is executed asynchronously, 

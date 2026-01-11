@@ -44,6 +44,11 @@ Example
     }
 
 
+When data is changed, it is important to understand :doc:`asynchronous </refs/client/item/m_open>` and 
+:doc:`synchronous</refs/client/item/m_open>` methods.
+
+
+
 See also
 ========
 
@@ -52,4 +57,6 @@ See also
 :doc:`value </refs/client/field/at_value>`
 
 :doc:`on_before_field_changed <on_before_field_changed>`
+
+:doc:`open </refs/client/item/m_open>`
 
