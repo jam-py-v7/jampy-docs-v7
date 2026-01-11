@@ -21,7 +21,7 @@ module from the server, initializes the item and then executes the **callback**
 function, otherwise just the **callback** function is executed. The item is 
 passed to the callback function as a parameter. 
 
-The request to the sever is executed asyncroniously.
+The request to the server is executed asynchronously.
 
 Example
 =======

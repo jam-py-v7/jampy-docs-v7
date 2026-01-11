@@ -24,7 +24,7 @@ is passed to the callback function as a parameter.
 The **js_filename** should specify the path to javascript file relative to the 
 server directory.
 
-The request to the sever is executed asyncroniously.
+The request to the server is executed asynchronously.
 
 Example
 =======
