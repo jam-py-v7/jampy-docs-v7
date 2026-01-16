@@ -35,12 +35,12 @@ First, start with forking `Jam.py-v7`_.
 
 Next, clone your fork::
 
-        ...\> git clone https://github.com/YourGitHubName/jam-py-v7.git
+        git clone https://github.com/YourGitHubName/jam-py-v7.git
 
 and start the server::
 
-        ...\> cd jam-py-v7/builder
-        ...\> ./server.py
+        cd jam-py-v7/builder
+        ./server.py
 
 
 Open a Web browser and enter
@@ -73,11 +73,15 @@ After customisation is finished, the ``Prepare files`` clicked, we copy all the
 files from ``jam_files`` folder into to distribution folders::
 
 
-  	    ...\> cp -fr jam_files/* ../jam/.
+  	    cp -fr jam_files/* ../jam/.
+
+On MS Windows::
+
+  	    xcopy jam_files\* ..\jam\.  /E /H /C /I /Y
 
 To increase the Jam.py version number, we edit below file::
 
-  	    ...\> vi ../jam/__init__.py
+  	    vi ../jam/__init__.py
 
 
 We can now install updated version as usual with the new version number. 
@@ -86,4 +90,4 @@ If all good to go, commit and create a Github ``pull`` request with the changes.
 
 For the project maintainers, to initiate Github Actions, accomodate tag number below::
 
-  	    ...\> git push && git tag 7.0.XX && git push --tags
+  	    git push && git tag 7.0.XX && git push --tags
