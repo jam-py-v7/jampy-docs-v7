@@ -10,3 +10,4 @@ JavaScript and uses JQuery and Bootstrap
 
     client/index
     server/index
+    exceptions/index
