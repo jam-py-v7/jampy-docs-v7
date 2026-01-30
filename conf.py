@@ -49,10 +49,17 @@ import shlex
 # ones.
 
 #extensions = ['sphinx_rtd_theme']
-extensions = ['sphinx_sitemap', 'sphinx_copybutton', 'sphinxcontrib.jquery', 'sphinx_llms_txt']
+extensions = ['sphinx_copybutton', 'sphinxcontrib.jquery', 'sphinx.ext.linkcode']
 html_baseurl = 'https://jampy-docs-v7.readthedocs.io/en/latest/'
 
 
+html_context = {
+    "display_github": True, # Integrate GitHub
+    "github_user": "jam-py-v5", # Username
+    "github_repo": "jampy-docs-v7", # Repo name
+    "github_version": "main", # Version
+    "conf_py_path": "/", # Path in the checkout to the docs root
+}
 
 # Add any paths that contain templates here, relative to this directory.
 
@@ -570,3 +577,17 @@ texinfo_documents = [
 llms_txt_exclude = [
     "requirements",  # Exclude the search page
 ]
+
+def linkcode_resolve(domain, info):
+    """Map specific exceptions to specific files."""
+    if domain != 'py':
+        return None
+    
+    mapping = {
+        'LanguageNotFound': 'https://github.com/jam-py-v5/jam-py-v7/blob/master/jam/langs.py',
+        'NetworkError': 'https://github.com/username/repo/blob/main/network.py',
+        'FileError': 'https://github.com/username/repo/blob/main/file_ops.py',
+    }
+    
+    exception_name = info['fullname']
+    return mapping.get(exception_name)
