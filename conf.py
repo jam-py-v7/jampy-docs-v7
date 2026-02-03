@@ -49,7 +49,7 @@ import shlex
 # ones.
 
 #extensions = ['sphinx_rtd_theme']
-extensions = ['sphinx_copybutton', 'sphinxcontrib.jquery', 'sphinx.ext.linkcode']
+extensions = ['sphinx_copybutton', 'sphinxcontrib.jquery', 'sphinx.ext.linkcode', 'sphinx_llms_txt']
 html_baseurl = 'https://jampy-docs-v7.readthedocs.io/en/latest/'
 
 
