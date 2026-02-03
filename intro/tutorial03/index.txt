@@ -5,7 +5,7 @@ Tutorial. Part 3. Details
 In this part of the tutorial we will explain how to work with details.
 
 
-Let's select the "Task/Groups" item in the project tree and and click the **New** 
+Let's select the "Task/Groups" item in the project tree and click the **New** 
 button at the bottom right corner of the page:
 
 

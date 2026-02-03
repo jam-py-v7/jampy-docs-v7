@@ -2,7 +2,7 @@
 Task tree
 =========
 
-All objects of the framework represent a tree of objects. These object are 
+All objects of the framework represent a tree of objects. These objects are 
 called items.
 
 All items of the tree have common ancestor class ``AbstractItem`` (
@@ -126,7 +126,7 @@ The hierarchical structure of the project is one of the bases of the DRY
 For example, some methods of the items, when executed, successively generate 
 events for the task, group and the item.
 
-This way we can define a basic behavior for all items in the event handler of 
+This way we can define a basic behaviour for all items in the event handler of 
 the task, that can be expanded in the event handler of the group, and finally, 
 if necessary, can be specified in the event handler of the item itself. For more 
 details see
