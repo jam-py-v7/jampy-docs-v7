@@ -37,3 +37,5 @@ In version 7.0.82, Databricks support was added.
 In version 7.0.86, Monaco Tab closing bug was fixed.
 
 In version 7.0.90, Builder translations for zh-CN added.
+
+In version 7.0.91, custom Menu permission issues fixed, History accordion fixed,  on_apply on index creation fixed.
