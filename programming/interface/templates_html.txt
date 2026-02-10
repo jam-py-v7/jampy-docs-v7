@@ -4,10 +4,13 @@ templates.html
 
 When some method creates a form, the application finds a corresponding html template in this file.
 
+This file is located in the root directory of a project
+and accessed/modified by click on ``templates.html [F9]`` on :doc:`Task </admin/task>`  tree.
+
 You can define your own form templates to create your own custom forms. See 
 :doc:`Form templates <form_templates>`.
 
-The default ``template.html`` content:
+The default ``templates.html`` content:
 
 .. code-block:: html
 

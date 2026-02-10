@@ -35,7 +35,7 @@ handler if one is defined for the item.
 
 After that it sends the request to the server. If ``callback`` 
 parameter-function is specified, the request is executed **asynchronously**. 
-The :doc:`server </refs/client/abstr_item/m_server> after receiving the request, checks if the corresponding item on the 
+The :doc:`server </refs/client/abstr_item/m_server>` after receiving the request, checks if the corresponding item on the 
 server (item of the 
 :doc:`task tree </programming/task_tree>` 
 with the same ID attribute) has the

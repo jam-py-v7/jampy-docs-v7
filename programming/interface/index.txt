@@ -6,6 +6,7 @@ Client side programming
     :maxdepth: 1
 
     index_html
+    templates_html
     initializing_application
     forms
     form_templates

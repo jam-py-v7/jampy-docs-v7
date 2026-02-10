@@ -43,3 +43,4 @@ Events
     :glob:
     
     item/on_*
+    item/process_*
