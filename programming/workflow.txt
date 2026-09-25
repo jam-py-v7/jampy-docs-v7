@@ -9,7 +9,7 @@ tree and the Project task tree. Therefore, before considering the Jam.py workflo
 you need to familiarize yourself with the concept of the 
 :doc:`task tree <task_tree>`.
 
-The the Jam.py workflow is the following:
+The Jam.py workflow is the following:
 
 * When server.py is run it creates WSGI application that, in its own turn, 
   creates the Application builder task tree.
