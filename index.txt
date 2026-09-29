@@ -1,5 +1,5 @@
 .. Comments section.
-   Please, add custom directive or links, pictures, text replacement at the end of this document
+   Please, add custom directive or links, pictures, text replacement at the end of this document.
 
 
 =======================
