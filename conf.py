@@ -37,12 +37,12 @@ import shlex # noqa: F401
 # ones.
 #
 extensions = [
-    # 'sphinx_copybutton',
+    'sphinx_copybutton',
     'sphinxcontrib.jquery',
     'sphinx.ext.linkcode',
     'sphinx.ext.githubpages',
-    # 'sphinx_llms_txt',
-    # 'sphinxcontrib.googleanalytics',
+    'sphinx_llms_txt',
+    'sphinxcontrib.googleanalytics',
 ]
 
 
