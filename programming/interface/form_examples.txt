@@ -192,7 +192,7 @@ or:
     <div class="tracks-edit">
         <div class="form-body">
             <div class="row">
-                <div id="edit-top edit-border"></div>
+                <div id="edit-top"  class="edit-border"></div>
                 <div class="col-lg-6">
                         <div id="edit-left" class="edit-border"></div>
                 </div>                            
