@@ -191,3 +191,11 @@ DuckDB
 
    No DDL is supported as well as project Import with the selected DuckDB database.
 
+MS Access
+----------
+
+.. image:: /admin/_images/ms_access_jampy.png
+	:align: center
+	:alt: MS Access setup
+
+
