@@ -38,7 +38,7 @@ Examples of database setups
 
     Jam.py supports many different database servers. For example PostgreSQL_, 
     MariaDB_, MySQL_, MSSQL_, Oracle_, Firebird_, IBM_, SQLite_, Databricks_, DuckDB_,
-    and SQLite with SQLCipher_.
+    SQLite with SQLCipher_ and MS Access_.
 
     If you are developing a small project or something you don't plan to deploy in
     a production environment, SQLite is generally the best option as it doesn't
@@ -61,6 +61,7 @@ Examples of database setups
     * If using Firebird_,  ``fdb``, ``firebirdsql`` or ``firebird-driver`` package is needed.
     * If using Databricks_, ``databricks-sql-connector`` is needed.
     * If using DuckDB_, ``duckdb`` is needed.
+    * If using MS Access_, ``pyodbc`` and Microsoft Access 2016 Runtime is needed.
     * To generate reports, **LibreOffice** must be installed. :doc:`Portable </refs/server/reports/on_convert_report>` LibreOffice is supported.
       External libraries are also supported as well as jinja templates. Browser ``Pop-ups`` for the site should be enabled.
 
@@ -85,6 +86,7 @@ Examples of database setups
 .. _IBM: https://www.ibm.com/support/pages/downloading-ibm-db2-version-115-linux-unix-and-windows
 .. _Databricks: https://www.databricks.com/blog/how-use-lakebase-transactional-data-layer-databricks-apps
 .. _DuckDB: https://github.com/duckdb/duckdb
+.. _Access: https://www.microsoft.com/en-us/download/details.aspx?id=50040
     
 .. note::
 
