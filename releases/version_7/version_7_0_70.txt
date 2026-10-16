@@ -50,3 +50,10 @@ In version 7.0.97, GitHub Code Security and Quality was applied and merged.
 In version 7.0.99, create_connection_ex ported from v5.
 
 In version 7.0.112, f_copy_of (translation is needed at langs.sqlite), disabling feature was added on Item Editor. wsgi.py got ready for jinja2. 
+
+In version 7.0.114, Jinja2 Support, Multi-Field Search, enhanced templating flexibility, and handy developer productivity features.
+
+In version 7.0.116, upgraded the Jam.py App builder.
+
+In version 7.0.118, MS Access support added. Not all Access database fields are supported, ie. attachments. Table DDL is supported with
+"COUNTER CONSTRAINT PK_%s PRIMARY KEY". 

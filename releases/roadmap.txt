@@ -9,7 +9,7 @@ We plan to add the following features to Jam.py:
   mobile devices.
 * Language support stage 2: internalization, support for multiple languages in 
   the project.
-* Support for Bootstrap 4.  
+* Support for Bootstrap 5.  
 * Support for mobile devices.  
 * Development of report wizards, simplifying report creation
 * Rework of import/export utility: visual interface, control over merging of changes.
