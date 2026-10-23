@@ -90,6 +90,40 @@ Import example for PostgreSQL, the rest of code as for MySQL:
 
 
 
+Import example for MS Access:
+
+.. code-block:: py
+
+    import pyodbc
+    from jam.db.access_db import db
+    from jam.items import QueryData
+
+    def on_open(item, params):
+        connection = item.task.create_connection_ex(
+            db,
+            database = r'c:\Users\dba\Downloads\access.accdb'
+        )
+        try:
+            query_data = QueryData(params)
+            sql, sql_params = db.get_select_query(item, query_data)
+            rows = item.task.select(sql, connection, db, sql_params)
+        finally:
+            connection.close()
+        return rows, ''
+
+    def on_apply(item, delta, params, con):
+        connection = item.task.create_connection_ex(
+            db,
+            database=r'c:\Users\dba\Downloads\access.accdb'
+        )
+        try:
+            result = delta.apply_delta(delta, params, connection, db)
+            connection.commit()
+        finally:
+            connection.close()
+        return result
+
+
 .. note::
   The below procedure was not tested with Jam.py V7.
 

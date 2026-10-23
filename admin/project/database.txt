@@ -86,7 +86,7 @@ Examples of database setups
 .. _IBM: https://www.ibm.com/support/pages/downloading-ibm-db2-version-115-linux-unix-and-windows
 .. _Databricks: https://www.databricks.com/blog/how-use-lakebase-transactional-data-layer-databricks-apps
 .. _DuckDB: https://github.com/duckdb/duckdb
-.. _Access: https://www.microsoft.com/en-us/download/details.aspx?id=50040
+.. _Access: https://support.microsoft.com/en-us/access/download-and-install-microsoft-365-access-runtime
     
 .. note::
 
