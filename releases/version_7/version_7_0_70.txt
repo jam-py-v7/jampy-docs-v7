@@ -35,25 +35,29 @@ With Apple keyboard:
      In some implementations of the Monaco Editor, you can find the Command Palette in the editor's context (right-click) menu.
 
 
-In version 7.0.81, Traceback on new project fixed. Demo "view_first: true" changed to "view_first: false".
+In version:
 
-In version 7.0.82, Databricks support was added.
+7.0.81, Traceback on new project fixed. Demo "view_first: true" changed to "view_first: false".
 
-In version 7.0.86, Monaco Tab closing bug was fixed.
+7.0.82, Databricks support was added.
 
-In version 7.0.90, Builder translations for zh-CN added. Complete zh-CN Demo is here: https://github.com/jam-py-v7/jampy-docs-v7-zh-cn 
+7.0.86, Monaco Tab closing bug was fixed.
 
-In version 7.0.91, custom Menu permission issues fixed, History accordion fixed,  on_apply on index creation fixed.
+7.0.90, Builder translations for zh-CN added. Complete zh-CN Demo is here: https://github.com/jam-py-v7/jampy-docs-v7-zh-cn 
 
-In version 7.0.97, GitHub Code Security and Quality was applied and merged.    
+7.0.91, custom Menu permission issues fixed, History accordion fixed,  on_apply on index creation fixed.
 
-In version 7.0.99, create_connection_ex ported from v5.
+7.0.97, GitHub Code Security and Quality was applied and merged.    
 
-In version 7.0.112, f_copy_of (translation is needed at langs.sqlite), disabling feature was added on Item Editor. wsgi.py got ready for jinja2. 
+7.0.99, create_connection_ex ported from v5.
 
-In version 7.0.114, Jinja2 Support, Multi-Field Search, enhanced templating flexibility, and handy developer productivity features.
+7.0.112, f_copy_of (translation is needed at langs.sqlite), disabling feature was added on Item Editor. wsgi.py got ready for jinja2. 
 
-In version 7.0.116, upgraded the Jam.py App builder.
+7.0.114, Jinja2 Support, Multi-Field Search, enhanced templating flexibility, and handy developer productivity features.
 
-In version 7.0.118, MS Access support added. Not all Access database fields are supported, ie. attachments. Table DDL is supported with
-"COUNTER CONSTRAINT PK_%s PRIMARY KEY". 
+7.0.116, upgraded the Jam.py App builder.
+
+7.0.118, MS Access support added. Not all Access database fields are supported, ie. attachments. Table DDL is supported with
+"COUNTER CONSTRAINT PK_%s PRIMARY KEY", for table primary key.
+
+7.0.120, create_connection_ex bug fixed.
