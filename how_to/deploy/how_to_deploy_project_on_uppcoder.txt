@@ -1,0 +1,46 @@
+=================================
+How to deploy project on Uppcoder
+=================================
+
+`Uppcoder <https://portal.uppcoder.com/jampy>`_ runs Jam.py v7 in a container of its own, at its own HTTPS
+address, with the Application Builder, a terminal and VS Code in the browser. Nothing is installed on your
+computer.
+
+Try it first, without an account
+--------------------------------
+
+* Open https://portal.uppcoder.com/jampy and start the **Music Store** demo or an **Empty project**.
+  It runs in a sandbox of your own for two hours. Sign up at any point to keep what you made.
+
+Deploy a project you keep
+-------------------------
+
+* Sign up at https://portal.uppcoder.com and click the link in the confirmation email. Then go to
+  **Billing**, **Available Plans**, and start the free plan (**Spark**: one app, no card needed).
+
+* Open **Stacks**, **Create**, **Blank stack**. Type "jam" in the search box and pick **Jam.py**.
+
+* On the Jam.py card choose:
+
+  * **Jam.py version**: 7.0
+  * **Start from**: **Empty project**, or the **Music store demo** (customers, invoices, 3,504 tracks)
+
+  Give the app a name. The project uses SQLite.
+
+* Press **Deploy**, check the summary, then **Confirm and deploy**. The stack page shows the app's address
+  when it is running.
+
+* Open the address and add */builder.html* for the Application Builder. It signs in with your Uppcoder
+  account, so there is no separate builder password to manage.
+
+Working on the project
+----------------------
+
+* The stack page has a **terminal** (with the app server's log), a **file manager**, and **VS Code** in the
+  browser. The project lives in */home/uppcoder/app*.
+
+* Use **Git** from the terminal or VS Code to keep the project in a repository of your own, for example on
+  GitHub.
+
+* To use your own domain instead of the Uppcoder address, a paid plan is needed. See
+  https://portal.uppcoder.com/pricing
