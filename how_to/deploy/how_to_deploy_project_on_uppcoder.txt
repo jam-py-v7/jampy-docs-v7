@@ -36,8 +36,9 @@ Deploy a project you keep
 Working on the project
 ----------------------
 
-* The stack page has a **terminal** (with the app server's log), a **file manager**, and **VS Code** in the
-  browser. The project lives in */home/uppcoder/app*.
+* The stack page has a **terminal** (with the app server's log), a **file manager**, the project's **SQLite
+  database** to look at its tables and data, and **VS Code** in the browser. The project lives in
+  */home/uppcoder/app*.
 
 * Use **Git** from the terminal or VS Code to keep the project in a repository of your own, for example on
   GitHub.
