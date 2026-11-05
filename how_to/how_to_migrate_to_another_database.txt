@@ -2,16 +2,14 @@
 How to migrate to another database
 ==================================
 
-TBA - changed from Jam.py v5.
-
 You can migrate your data to another database.
 
 For example, you developed your project with SQLite database and want to move to 
-Postgress.
+PostgreSQL.
 
 To do this, follow these steps:
 
-#. Create an empty Postgress database
+#. Create an empty PostgreSQL database
 
 #. Create a new project with this database
 
@@ -20,34 +18,24 @@ To do this, follow these steps:
    :doc:`Export </admin/project/export>` button.
 
 #. Import the metadata to the new project. The web application with create
-   database structures in the Postgress database.
+   database structures in the PostgreSQL database.
   
-#. copy data from SQlite to Postgress database using the 
+#. copy data from SQlite to PostgreSQL database using the 
    :doc:`copy_database </refs/server/task/m_copy_database>` method of the task:
   
    * within the Project\Task create the following Server Module function (adjust the below database path with correct one):
   
      .. code-block:: py
     
-       from jam.db.db_modules import SQLITE
-      
-       def copy_db(task):
-           task.copy_database(SQLITE, '/home/work/demo/demo.sqlite')
+        from jam.common import consts
+        def copy_db(task):
+            task.copy_database(consts.SQLITE, 'demo.sqlite')
+        def on_created(task):
+            copy_db(task)
   
    * then, execute it with the one of the following ways:
   
-     * call this function in the 
-       :doc:`on_created </refs/server/task/on_created>` event handler:
-
-       .. code-block:: py
-      
-         from jam.db.db_modules import SQLITE
-        
-         def copy_db(task):
-             task.copy_database(SQLITE, '/home/work/demo/demo.sqlite')
- 
-         def on_created(task):
-           copy_db(task)
+     * refresing the Application or the Builder
           
      * create a button in some form and use the task 
        :doc:`server </refs/client/abstr_item/m_server>` method to execute it
@@ -66,7 +54,7 @@ To do this, follow these steps:
 
          task.server('copy_db')
          
-#. Remove the code that was used immediately after this procedure.         
+#. Remove or comment the code that was used immediately after this procedure.         
 
 .. note::
 	
