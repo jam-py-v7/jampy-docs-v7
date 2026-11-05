@@ -1,9 +1,9 @@
 =============
 copy_database
 =============
-TBA - changed from Jam.py v5.
 
-.. py:method:: copy_database(self, dbtype, database=None, user=None, password=None, host=None, port=None, encoding=None, server=None)
+
+.. py:method:: copy_database(self, dbtype, connection, limit=1000)
 
 **domain**: server
 
@@ -27,10 +27,11 @@ copies the data from the demo.sqlite database to the project database:
 
 .. code-block:: py
 
-  from jam.db.db_modules import SQLITE
-  
-  def on_created(task):
-      task.copy_database(SQLITE, '/home/work/demo/demo.sqlite')
+    from jam.common import consts
+    def copy_db(task):
+        task.copy_database(consts.SQLITE, 'demo.sqlite')
+    def on_created(task):
+        copy_db(task)
 
 
 
