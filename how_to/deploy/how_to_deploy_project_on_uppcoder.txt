@@ -22,7 +22,7 @@ Deploy a project you keep
 
 * On the Jam.py card choose:
 
-  * **Jam.py version**: 7.0
+  * **Jam.py version**: >7.0.100
   * **Start from**: **Empty project**, or the **Music store demo** (customers, invoices, 3,504 tracks)
 
   Give the app a name. The project uses SQLite.
