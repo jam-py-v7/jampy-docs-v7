@@ -70,7 +70,7 @@ Below code was tested with V7 for MySQL, MSSQL and PostgreSQL database (auto inc
             return result
 
 
-Import example for MSSQL, the rest of code as for MySQL:
+Import example for MSSQL, the rest of code is similar to MySQL:
 
 .. code-block:: py
 
@@ -80,14 +80,14 @@ Import example for MSSQL, the rest of code as for MySQL:
     ...
 
 
-Import example for PostgreSQL, the rest of code as for MySQL:
+Import example for PostgreSQL, the rest of code is similar to  MySQL:
 
 .. code-block:: py
 
     import psycopg2-binary
     from jam.db.postgres_db import db
     from jam.items import QueryData
-
+    ...
 
 
 Import example for MS Access:

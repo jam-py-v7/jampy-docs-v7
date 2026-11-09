@@ -95,6 +95,6 @@ We can now install updated version as usual with the new version number.
 If all good to go, commit and create a Github ``pull`` request with the changes.
 
 
-For the project maintainers, to initiate Github Actions, accomodate tag number below::
+For the project maintainers to initiate Github Actions, the merge is needed into the Main branch from Develop one. 
+The PyPi version is sourced from **__init__.py** file.
 
-  	    git tag 7.0.XX && git push --tags
